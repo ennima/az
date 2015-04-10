@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var fs = require('fs');
+//var fs = require('fs');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 	/*fs.writeFile(__dirname+'/tmp/test','hey there', function(err){
