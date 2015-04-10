@@ -1,0 +1,55 @@
+extends layout2
+
+block content
+	h1 SAT
+	div(class="row")
+		div(class="small-10 small-centered large-6 large-centered columns")
+			form
+				label(for="user") Titulo Articulo
+				input(type="text" placeholder="Titulo del articulo" name="title" id="title")
+				
+				label(for="FontColor") Color de Fuente
+				select(name="FontColor" id="FontColor")
+					option(value="black") black
+					option(value="white") white
+				
+				label(for="img_url") ImgURL
+				input(type="text" placeholder="direccion de la imagen" name="img_url" id="img_url")
+				label(for="description") Descripción
+				textarea(name="description" rows="3" placeholder="Descripcion del articulo")
+				
+				label(for="contenido") Contenido
+				textarea(name="contenido" rows="10" placeholder="Contenido del articulo")
+	
+				div(class="small-12")
+					input(type="submit" value="Subir" class="button right small-12 large-4")
+
+	div(class="row")
+		div(class="small-10 small-centered large-6 large-centered columns")
+			form
+				label(for="user") Titulo Comic
+				input(type="text" placeholder="Titulo del articulo" name="title" id="title")
+				
+				label(for="img_dir_url") Img dir URL
+				input(type="text" placeholder="direccion de la carpeta de imagenes" name="img_dir_url" id="img_dir_url")
+				
+				label(for="img_thumb_url") Portada Thumbnail URL
+				input(type="text" placeholder="direccion de Thumbnail" name="img_thumb_url" id="img_thumb_url")
+			
+				label(for="description") Descripción
+				textarea(name="description" rows="3" placeholder="Descripcion del tomo")
+				
+				label(for="trazo") Trazo
+				input(type="text" placeholder="Dibujante" name="trazo" id="trazo")
+				
+				label(for="tintas") Tintas
+				input(type="text" placeholder="Inker" name="tintas" id="tintas")
+
+				label(for="color") Color
+				input(type="text" placeholder="Colorista" name="color" id="color")
+				
+				label(for="historia") Historia
+				input(type="text" placeholder="Escritor" name="historia" id="historia")
+				
+				div(class="small-12")
+					input(type="submit" value="Subir" class="button right small-12 large-4")

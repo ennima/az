@@ -1,0 +1,42 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	div(class="slideShow")
+		ul(id="carousel" class="elastislide-list")
+			li
+				a(href="#")
+					img(src="images/small/1.jpg" alt="image01")
+		
+			li
+				a(href="#")
+					img(src="images/small/1.jpg" alt="image01")
+
+			li
+				a(href="#")
+					img(src="images/small/1.jpg" alt="image01")
+			li
+				a(href="#")
+					img(src="images/small/1.jpg" alt="image01")
+			li
+				a(href="#")
+					img(src="images/small/1.jpg" alt="image01")
+			li
+				a(href="#")
+					img(src="images/small/1.jpg" alt="image01")
+			li
+				a(href="#")
+					img(src="images/small/1.jpg" alt="image01")
+			li
+				a(href="#")
+					img(src="images/small/1.jpg" alt="image01")
+			li
+				a(href="#")
+					img(src="images/small/1.jpg" alt="image01")
+	//script(src="javascripts/carrousel/modernizr.custom.17475.js")
+	script(src="javascripts/jquery-1.11.2.min.js")
+	script(src="javascripts/carrousel/jquerypp.custom.js")
+	script(src="javascripts/carrousel/jquery.elastislide.js")
+	script(type="text/javascript")
+		$( '#carousel' ).elastislide();
